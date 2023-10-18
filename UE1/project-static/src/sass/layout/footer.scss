@@ -1,6 +1,21 @@
 footer {
-    background-color: black;
-    color: red;
-    font-size: xx-large;
-}
+    background-color: $myDarkGray;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
 
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        margin-top: 1rem;
+        font-size: 1rem;
+        color: $myOrange;
+    }
+}

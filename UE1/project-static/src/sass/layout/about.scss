@@ -1,0 +1,64 @@
+#about {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-color: #FFF7F2;
+
+    #marcus-portrait {
+        height: 35rem;
+        overflow: hidden;
+
+        img {
+            height: 50rem;
+        }
+    }
+
+    #about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        .super-headline {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .super-headline {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 300;
+        color: $myOrange;
+    }
+
+    a.button {
+        text-decoration: none;
+        color: $myDarkGray;
+        display: inline-block;
+        line-height: 38px;
+        width: 16rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border: solid 1px #f4a76c;
+        text-align: center;
+        vertical-align: middle;
+        margin-bottom: 4rem;
+    }
+}
+
+@include breakpoint(0, $mobile) {
+    #about {}
+}
+
+@include breakpoint($desktop) {
+    #about {}
+}

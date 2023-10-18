@@ -1,16 +1,118 @@
 #workshops {
- 
- // allgemeine Style
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+
+  #workshop-intro-text {
+    margin-top: 4rem;
+  }
+
+  p {
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  h2 {
+    color: $myOrange;
+    font-size: 28px;
+    font-weight: 300;
+  }
+
+  .level {
+    position: relative;
+    padding: 2rem;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: $myDarkGray;
+    color: white;
+
+    .dancer-container {
+      top: -3rem;
+      position: absolute;
+      align-self: center;
+
+      .dancer-icon {
+        position: relative;
+        align-self: center;
+        padding: 2rem;
+        background-color: $iconGray;
+        border-radius: 100%;
+        height: fit-content;
+        width: fit-content;
+        z-index: 100;
+
+        img {
+          height: 6rem;
+        }
+      }
+
+      .level-number {
+        display: flex;
+        position: absolute;
+        top: -1.3rem;
+        right: -1.3rem;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 100%;
+        z-index: 99;
+        background-color: $iconNumberGray;
+
+        p {
+          align-self: center;
+          align-content: center;
+          margin: auto;
+          font-size: 1.8rem;
+          color: $myOrange;
+        }
+      }
+    }
+
+    >img:first-child {
+      margin-bottom: 30px;
+    }
+
+    >img,
+    blockquote {
+      align-self: center;
+    }
+
+    h3 {
+      color: $myOrange;
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    .quote-container {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .quote-sign {
+      align-self: center;
+      color: $iconGray;
+      font-size: 10rem;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $myOrange;
+      height: 5rem;
+    }
+
+    blockquote {
+      align-self: center;
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+  }
 }
 
 @include breakpoint(0, $mobile) {
-  #workshops {
-  }
+  #workshops {}
 }
 
 @include breakpoint($desktop) {
-  #workshops {
-  }
+  #workshops {}
 }
-
-
