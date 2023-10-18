@@ -1,0 +1,57 @@
+header {
+  font-family: "SourceSans";
+  padding: 1rem;
+  display: flex;
+  height: 40rem;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/1024px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg");
+  background-position-x: center;
+  * {
+    color: white;
+    text-decoration: none;
+  }
+
+  #topbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    button {
+      width: 40px;
+      height: 40px;
+    }
+
+    ul {
+      display: none;
+    }
+  }
+
+  h2 {
+    color: #d5874c;
+    font-size: 2.5rem;
+  }
+
+  #hero-text {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+  }
+
+  a.button {
+    display: inline-block;
+    line-height: 2rem;
+    width: 17.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: solid 1px #f4a76c;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
