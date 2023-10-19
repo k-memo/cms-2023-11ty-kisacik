@@ -25,6 +25,7 @@
 
         .super-headline {
             margin-bottom: 0.5rem;
+            font-family: 'Source Sans Pro' !important;
         }
     }
 
@@ -37,13 +38,15 @@
         font-size: 2rem;
         font-weight: 300;
         color: $myOrange;
+        font-family: 'Source Sans Pro';
     }
 
     a.button {
+        font-family: 'Source Sans Pro';
         text-decoration: none;
         color: $myDarkGray;
         display: inline-block;
-        line-height: 38px;
+        line-height: 2.5rem;
         width: 16rem;
         height: 2.5rem;
         font-size: 1rem;

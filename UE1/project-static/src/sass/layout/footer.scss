@@ -1,4 +1,5 @@
 footer {
+    font-family: 'Source Sans Pro';
     background-color: $myDarkGray;
     color: white;
     padding: 2rem;
@@ -17,5 +18,6 @@ footer {
         margin-top: 1rem;
         font-size: 1rem;
         color: $myOrange;
+        text-decoration: none;
     }
 }

@@ -9,7 +9,6 @@
     .super-headline {
         font-size: 1rem;
         font-weight: 600;
-        margin-bottom: 1rem;
     }
 
     h2 {
@@ -35,6 +34,7 @@
     article {
         width: 26rem;
         background-color: #FFF7F2;
+        color: $iconGray;
 
         .article-image-container {
             position: relative;
@@ -49,6 +49,7 @@
 
         p {
             margin: 2rem 1rem 2rem 1rem;
+            line-height: 1.8rem;
         }
     }
 
@@ -56,7 +57,7 @@
         text-decoration: none;
         color: $myDarkGray;
         display: inline-block;
-        line-height: 38px;
+        line-height: 2.5rem;
         width: 10rem;
         height: 2.5rem;
         font-size: 1rem;

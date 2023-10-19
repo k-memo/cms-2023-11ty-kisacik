@@ -4,7 +4,13 @@
   gap: 10rem;
 
   #workshop-intro-text {
+    margin: 2rem;
     margin-top: 4rem;
+
+    .super-headline {
+      color: $myDarkGray;
+    }
+
   }
 
   p {
@@ -65,6 +71,7 @@
           align-content: center;
           margin: auto;
           font-size: 1.8rem;
+          font-weight: 600;
           color: $myOrange;
         }
       }
@@ -96,9 +103,14 @@
       align-self: center;
       color: $iconGray;
       font-size: 10rem;
+      font-weight: 800;
+      margin-top: -5rem;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: $myOrange;
-      height: 5rem;
+    }
+
+    a.button {
+      width: 12rem;
     }
 
     blockquote {

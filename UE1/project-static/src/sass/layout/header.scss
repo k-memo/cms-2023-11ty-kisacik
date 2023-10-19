@@ -1,5 +1,5 @@
 header {
-  font-family: "SourceSans";
+  font-family: 'Source Sans Pro';
   padding: 1rem;
   display: flex;
   height: 40rem;
@@ -8,6 +8,7 @@ header {
   color: white;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/1024px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg");
   background-position-x: center;
+
   * {
     color: white;
     text-decoration: none;
@@ -32,6 +33,11 @@ header {
   h2 {
     color: #d5874c;
     font-size: 2.5rem;
+    font-family: 'Source Sans Pro';
+  }
+
+  strong {
+    font-weight: 600;
   }
 
   #hero-text {
@@ -45,9 +51,10 @@ header {
 
   a.button {
     display: inline-block;
-    line-height: 2rem;
+    line-height: 2.5rem;
     width: 17.5rem;
     height: 2.5rem;
+    font-family: 'Source Sans Pro';
     font-size: 1rem;
     font-weight: 600;
     border: solid 1px #f4a76c;
