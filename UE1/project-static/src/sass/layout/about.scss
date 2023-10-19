@@ -56,12 +56,25 @@
         vertical-align: middle;
         margin-bottom: 4rem;
     }
-}
 
-@include breakpoint(0, $mobile) {
-    #about {}
-}
+    @include breakpoint($desktop) {
+        flex-direction: row;
+        padding: 2rem;
 
-@include breakpoint($desktop) {
-    #about {}
+        h2 {
+            font-size: 3rem;
+        }
+
+        #marcus-portrait {
+            width: 190rem;
+        }
+
+        #about-text {
+            p {
+                line-height: 1.8rem;
+                color: $iconGray;
+            }
+        }
+
+    }
 }

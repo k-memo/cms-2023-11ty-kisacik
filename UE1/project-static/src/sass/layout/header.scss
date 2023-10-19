@@ -7,6 +7,8 @@ header {
   justify-content: space-between;
   color: white;
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg/1024px-DANCE_-_Grupo_de_Rua%2C_%22Inoah%2C%22_at_Brooklyn_Academy_of_Music_%2849020288773%29.jpg");
+  background-repeat: no-repeat;
+  background-color: black;
   background-position-x: center;
 
   * {
@@ -24,10 +26,6 @@ header {
       width: 40px;
       height: 40px;
     }
-
-    ul {
-      display: none;
-    }
   }
 
   h2 {
@@ -44,7 +42,7 @@ header {
     align-self: flex-end;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.2rem;
     margin-right: 60px;
     margin-bottom: 60px;
   }
@@ -60,5 +58,51 @@ header {
     border: solid 1px #f4a76c;
     text-align: center;
     vertical-align: middle;
+  }
+
+  @include breakpoint(0, $mobile) {
+    ul {
+      display: none;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    padding: 2rem;
+    background-position-x: 35rem;
+
+    #hamburger {
+      display: none;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    ul {
+      display: flex;
+      gap: 2rem;
+
+      a {
+        color: $myOrange;
+        font-weight: 600;
+        text-decoration: underline $myOrange;
+      }
+
+    }
+
+    #hero-text {
+      align-self: flex-start;
+      margin-left: 10rem;
+      margin-bottom: 20rem;
+
+      a.button {
+        width: 12rem;
+      }
+
+      br {
+        display: none;
+      }
+
+    }
   }
 }

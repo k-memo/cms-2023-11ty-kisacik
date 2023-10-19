@@ -9,6 +9,7 @@
 
     .super-headline {
       color: $myDarkGray;
+      font-weight: 600;
     }
 
   }
@@ -31,9 +32,13 @@
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.2rem;
     background-color: $myDarkGray;
     color: white;
+
+    .mobile-level-number {
+      display: none;
+    }
 
     .dancer-container {
       top: -3rem;
@@ -109,6 +114,12 @@
       -webkit-text-stroke-color: $myOrange;
     }
 
+    .level-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
     a.button {
       width: 12rem;
     }
@@ -119,12 +130,88 @@
       font-weight: 200;
     }
   }
-}
 
-@include breakpoint(0, $mobile) {
-  #workshops {}
-}
+  @include breakpoint($desktop) {
+    gap: 2rem;
 
-@include breakpoint($desktop) {
-  #workshops {}
+    .super-headline {
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    .level {
+      width: 55rem;
+      padding: 2rem;
+      align-items: center;
+
+      .mobile-level-number {
+        position: absolute;
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12rem;
+        color: $myDarkGray;
+        left: -5.4rem;
+      }
+
+      .dancer-container {
+        position: relative;
+        margin: auto;
+        top: 0;
+
+        .level-number {
+          display: none;
+        }
+
+      }
+
+
+
+    }
+
+    .level:nth-child(even) {
+      flex-direction: row;
+
+      .quote-container {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .level:nth-child(odd) {
+      flex-direction: row-reverse;
+
+      .quote-container {
+        flex-direction: column;
+      }
+
+    }
+
+    .level:nth-child(2) {
+      margin-right: 1rem;
+      align-self: flex-end;
+
+      .mobile-level-number {
+        top: -2.5rem;
+      }
+    }
+
+    .level:nth-child(3) {
+      margin-right: 12rem;
+      align-self: flex-end;
+
+      .mobile-level-number {}
+    }
+
+    .level:nth-child(4) {
+      margin-right: 23rem;
+      align-self: flex-end;
+
+      .mobile-level-number {
+        bottom: -1.75rem;
+      }
+    }
+
+  }
 }

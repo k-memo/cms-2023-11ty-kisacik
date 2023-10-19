@@ -9,6 +9,7 @@
     .super-headline {
         font-size: 1rem;
         font-weight: 600;
+        color: $iconGray;
     }
 
     h2 {
@@ -68,12 +69,10 @@
         margin-left: 1rem;
         margin-bottom: 4rem;
     }
-}
 
-@include breakpoint(0, $mobile) {
-    #news {}
-}
-
-@include breakpoint($desktop) {
-    #news {}
+    @include breakpoint($desktop) {
+        h2 {
+            font-size: 3rem;
+        }
+    }
 }
