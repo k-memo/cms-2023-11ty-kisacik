@@ -14,6 +14,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Marcus G. Miller | Choreographer</title>
+    <meta property="og:title" content="Marcus G. Miller | Choreographer" />
+    <meta
+      property="og:description"
+      content="Welcome to the world of Marcus G. Miller, a renowned choreographer. Explore our dance workshops and discover the art of movement."
+    />
+    <meta
+      property="og:image"
+      content="https://i.imgur.com/kTDNqS9.jpg/og-image.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="600" />
+    <meta
+      property="keywords"
+      content="Marcus G. Miller, Choreographer, Dance
+    Workshops, Dancing"
+    />
+
+    <!--  Favicon Generator -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -22,14 +48,25 @@
         <a href="/"
           ><h1><strong>MARCUS G. MILLER</strong> | Choreographer</h1></a
         >
-        <nav>
-          <button id="hamburger"></button>
+        <nav id="mainnav">
           <ul>
             <li><a href="#workshops">Workshops</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#news">News</a></li>
           </ul>
         </nav>
+
+        <template id="burger-template">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-label="Menu"
+            aria-controls="mainnav"
+          >
+            <div id="burger-top"></div>
+            <div id="burger-bottom"></div>
+          </button>
+        </template>
       </div>
 
       <div id="hero-text">
@@ -238,6 +275,9 @@
       <div>
         <h4>Thank you for your interest in Art!</h4>
         <p>© 2004 – 2023 Marcus G. Miller</p>
+        <a href="mailto:datenschutz@marcus-miller.at"
+          >datenschutz@marcus-miller.at</a
+        >
       </div>
       <a href="#">Imprint & Privacy</a>
     </footer>
