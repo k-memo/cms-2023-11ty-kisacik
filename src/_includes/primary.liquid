@@ -15,25 +15,40 @@ title: Marcus G. Miller | Choreographer
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href='#'></a>
-                    </li>
-                    <li>
-                        <a href='#'></a>
-                    </li>
-                    <li>
-                        <a href='#'></a>
-                    </li>
-                    <li>
-                        <a href='#'></a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>I believe you can dance</h1>
-            <a class='button' href='#'>Book Workshop</a>
-        </header>
+      <div id="topbar">
+        <a href="/"
+          ><h1><strong>MARCUS G. MILLER</strong> | Choreographer</h1></a
+        >
+        <nav id="mainnav">
+          <ul>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </nav>
+
+        <template id="burger-template">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-label="Menu"
+            aria-controls="mainnav"
+          >
+            <div id="burger-top"></div>
+            <div id="burger-bottom"></div>
+          </button>
+        </template>
+      </div>
+
+      <div id="hero-text">
+        <h2>
+          I believe <br />
+          you can dance.
+        </h2>
+        <a href="#" class="button">BOOK WORKSHOP</a>
+      </div>
+    </header>
+
         {{ content }}
         <footer>
             <div>
