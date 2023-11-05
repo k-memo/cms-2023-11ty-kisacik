@@ -21,6 +21,7 @@ yarn.lock
 dist/
 build/
 out/
+_site/
 
 # Ignore log files and temporary files
 *.log
